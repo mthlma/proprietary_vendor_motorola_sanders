@@ -20,3 +20,23 @@
 soong_namespace {
 }
 
+android_app_import {
+	name: "DTVPlayer",
+	owner: "motorola",
+	apk: "proprietary/app/DTVPlayer/DTVPlayer.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "DTVService",
+	owner: "motorola",
+	apk: "proprietary/app/DTVService/DTVService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
